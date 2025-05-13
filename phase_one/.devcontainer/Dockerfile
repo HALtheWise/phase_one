@@ -18,6 +18,8 @@ RUN apt-get update \
 
 # Set users
 RUN adduser --disabled-password --gecos "" ${CONTAINER_USER}
+RUN usermod -a -G dialout ${CONTAINER_USER}
+
 USER ${CONTAINER_USER}
 WORKDIR /home/${CONTAINER_USER}
 

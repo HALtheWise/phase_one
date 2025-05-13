@@ -12,6 +12,7 @@
   },
   // https://github.com/serialport/serialport-rs/issues/153
   "runArgs": [
+    "--privileged",
     "--mount",
     "type=bind,source=/run/udev,target=/run/udev,readonly"
   ],

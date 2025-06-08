@@ -1,4 +1,4 @@
-use std::{thread, time::Duration};
+use std::{io::Stdin, thread, time::Duration};
 
 use esp_idf_svc::hal::{
     ledc::{config::TimerConfig, LedcDriver, LedcTimerDriver, Resolution},
